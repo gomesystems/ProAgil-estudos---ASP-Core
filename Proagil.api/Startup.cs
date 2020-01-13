@@ -49,6 +49,7 @@ namespace Proagil.api
 
            // app.UseHttpsRedirection(); //permite toda origem, metodo e cabecalho
             app.UseCors(x => x.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+            app.UseStaticFiles();
             app.UseMvc();
         }
     }
